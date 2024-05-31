@@ -4,8 +4,11 @@
     {
         static void Main(string[] args)
         {
-
-            UserInput.CalcMenu();
+            Calculator calculator = new Calculator();
+            Calculation calculation = new Calculation();
+            CalculatorMenu menu = new CalculatorMenu(calculator, calculation);
+            menu.ShowMenu();
+            
         }
     }
 }
